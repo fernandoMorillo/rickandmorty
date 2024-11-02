@@ -5,6 +5,7 @@ import EpisodiosPage from "./pages/EpisodiosPage";
 import LocacionesPage from "./pages/LocacionesPages";
 import PersonajesPage from "./pages/PersonajesPage";
 import DetallesPersonaje from "./components/Detalles/DetallesPersonaje";
+import HomePage from "./components/Home/Home";
 import "./App.css";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" component={() => <h1>Dashboard Principal</h1>} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/episodes" element={<EpisodiosPage />} />
           <Route path="/locations" element={<LocacionesPage />} />
           <Route path="/character" element={<PersonajesPage />} />
